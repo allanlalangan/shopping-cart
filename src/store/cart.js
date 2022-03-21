@@ -7,7 +7,17 @@ const cartSlice = createSlice({
     toggle(state) {
       state.isCartOpen = !state.isCartOpen
     },
-    addItem(state, action) {},
+    addItem(state, action) {
+      const newItem = action.payload
+      const existingCartItem = state.items.find(
+        (item) => item.title === newItem.title
+      )
+      if (existingCartItem) {
+        existingCartItem.quantity++
+      } else {
+        state.items.push(newItem)
+      }
+    },
   },
 })
 
