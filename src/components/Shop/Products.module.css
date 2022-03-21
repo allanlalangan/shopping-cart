@@ -1,16 +1,18 @@
 .products h2 {
-  color: white;
-  margin: 2rem auto;
-  text-align: center;
-  text-transform: uppercase;
-}
+  color: var(--prim-text);
+  height: 10vh;
 
-.products ul {
-  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 
 .products-list {
+  margin: 0 2rem;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }

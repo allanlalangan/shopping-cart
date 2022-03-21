@@ -11,8 +11,8 @@ const CartButton = (props) => {
   }
 
   return (
-    <button onClick={toggleDisplayHandler} className={classes.button}>
-      <span>My Cart</span>
+    <button onClick={toggleDisplayHandler} className={classes['cart-button']}>
+      <span className={classes['cart-button-text']}>My Cart</span>
       <span className={classes.badge}>{cartItems.length}</span>
     </button>
   )

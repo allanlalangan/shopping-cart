@@ -1,20 +1,33 @@
-.button {
-  background-color: transparent;
-  border-color: #1ad1b9;
-  color: #1ad1b9;
+.cart-button {
+  border: 1px solid var(--btn-color);
 }
 
-.button:hover,
-.button:active {
-  color: white;
+.cart-button:hover,
+.cart-button:active {
+  background-color: var(--btn-color);
+}
+
+.cart-button:hover > .cart-button-text,
+.cart-button:active > .cart-button-text {
+  color: var(--prim-text);
+}
+
+.cart-button:hover > .badge {
+  background-color: var(--sec-color);
+}
+
+.cart-button-text {
+  color: var(--btn-color);
+  margin: 0 0.5rem;
 }
 
 .button span {
+  letter-spacing: 0.15rem;
   margin: 0 0.5rem;
 }
 
 .badge {
-  background-color: #1ad1b9;
+  background-color: var(--btn-color);
   border-radius: 30px;
   padding: 0.15rem 1.25rem;
   color: #1d1d1d;
