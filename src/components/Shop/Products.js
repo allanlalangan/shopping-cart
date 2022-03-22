@@ -1,12 +1,12 @@
 import ProductItem from './ProductItem'
-import classes from './Products.module.css'
+import styles from './Products.module.css'
 import products from '../../dummyProducts'
 
 const Products = (props) => {
   return (
-    <section className={classes.products}>
+    <section className={styles.products}>
       <h2>All Products</h2>
-      <ul className={classes['products-list']}>
+      <ul className={styles['products-list']}>
         {products.map((product) => {
           return (
             <ProductItem

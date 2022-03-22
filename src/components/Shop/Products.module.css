@@ -1,13 +1,13 @@
 .products h2 {
   color: var(--prim-text);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
   height: 10vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
 }
 
 .products-list {

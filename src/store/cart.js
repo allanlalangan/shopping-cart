@@ -18,6 +18,25 @@ const cartSlice = createSlice({
         state.items.push(newItem)
       }
     },
+    subQty(state, action) {
+      const cartItem = state.items.find(
+        (item) => item.title === action.payload.title
+      )
+
+      if (cartItem.quantity === 1) {
+        state.items = state.items.filter(
+          (item) => item.title !== cartItem.title
+        )
+      } else {
+        cartItem.quantity--
+      }
+    },
+    addQty(state, action) {
+      const cartItem = state.items.find(
+        (item) => item.title === action.payload.title
+      )
+      cartItem.quantity++
+    },
   },
 })
 

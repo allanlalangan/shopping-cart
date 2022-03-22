@@ -1,5 +1,5 @@
 import Card from '../UI/Card'
-import classes from './ProductItem.module.css'
+import styles from './ProductItem.module.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { cartActions } from '../../store/cart'
 
@@ -11,14 +11,14 @@ const ProductItem = (props) => {
   }
 
   return (
-    <Card className={classes['item-card']}>
+    <Card className={styles['item-card']}>
       <header>
         <h3>{props.title}</h3>
-        <div className={classes.price}>${props.price.toFixed(2)}</div>
+        <div className={styles.price}>${props.price.toFixed(2)}</div>
       </header>
       <p>{props.description}</p>
-      <div className={classes.actions}>
-        <button onClick={addItemToCartHandler} className={classes['add-btn']}>
+      <div className={styles.actions}>
+        <button onClick={addItemToCartHandler} className={styles['add-btn']}>
           Add to Cart
         </button>
       </div>

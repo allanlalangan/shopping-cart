@@ -6,7 +6,7 @@
   font-size: 0.75rem;
   grid-auto-rows: auto;
   background-color: var(--bg-color);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .item h3 {
@@ -35,5 +35,5 @@
 
 .add-btn {
   color: var(--prim-text);
-  border: solid 1.5px var(--btn-color);
+  border: solid 1.25px var(--btn-color);
 }
